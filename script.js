@@ -19,11 +19,13 @@
   /* ---------- Mobile navigation ---------- */
   const closeNav = () => {
     nav.classList.remove("open");
+    document.body.classList.remove("nav-open");
     navToggle.setAttribute("aria-expanded", "false");
     navToggle.setAttribute("aria-label", "Open menu");
   };
   const openNav = () => {
     nav.classList.add("open");
+    document.body.classList.add("nav-open");
     navToggle.setAttribute("aria-expanded", "true");
     navToggle.setAttribute("aria-label", "Close menu");
   };
